@@ -1,9 +1,10 @@
 import React from 'react'
+import Toggle from './components/Toggle'
 
 const App = () => {
     return (
         <div>
-            <h1>React App</h1>
+            <Toggle />
         </div>
     )
 }
