@@ -6,7 +6,7 @@ const App = () => {
 
     return (
         <>
-            <button onClick={() => setIsShow(!isShow)}>{isShow ? 'Show' : 'Hide'}</button>
+            <button onClick={() => setIsShow(!isShow)}>{isShow ? 'Hide' : 'Show'}</button>
             {
                 isShow && <h1>I am here!</h1>
             }
