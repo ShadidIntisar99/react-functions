@@ -11,18 +11,21 @@ const Form = () => {
             age: age
         }
         e.preventDefault()
-        console.log({ name, age })
-        axios.post('https://react-app-d542a-default-rtdb.firebaseio.com/user.json', userData)
+        //console.log({ name, age })
+        axios.post('https://jsonplaceholder.typicode.com/posts', {
+            method: 'POST',
+            body: JSON.stringify(userData),
+            headers: {
+                'Content-type': 'application/json; charset=UTF-8',
+            },
+        })
             .then(function (response) {
                 console.log(response);
             })
             .catch(function (error) {
                 console.log(error);
             });
-
-       
     }
-
 
     return (
         <form>

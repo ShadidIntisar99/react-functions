@@ -3,12 +3,13 @@ import React from 'react';
 
 const FetchData = () => {
 
+
     const fetchHadler = (e) => {
 
-        axios.get('https://react-app-d542a-default-rtdb.firebaseio.com/user.json')
+        axios.get('https://jsonplaceholder.typicode.com/posts/')
             .then(function (response) {
                 // handle success
-                console.log(typeof response.data);
+                console.log(response);
             })
             .catch(function (error) {
                 // handle error
